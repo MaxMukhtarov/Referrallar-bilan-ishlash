@@ -1,3 +1,4 @@
+from uuid import uuid1
 class Marketing:
       all_rs = {}
       all_points = {}
@@ -10,14 +11,11 @@ class Marketing:
             Marketing.all_points[self.user] = 0
             
       def referral(self):
-            import random
-            r = ''
-            for _ in range(6):
-                  r += str(random.randint(0, 9))
-                  if r not in self.rs:
-                        self.r1 = r
+            r = str(uuid1())
+            if r not in self.rs:
+                  self.r1 = r
                         
-                        self.rs.append(self.r1)
+                  self.rs.append(self.r1)
             Marketing.all_rs[self.r1] = self.user
             return self.r1
           
@@ -28,13 +26,3 @@ class Marketing:
                   
             else:
                   pass
-                  
-                  
-          
-
-
-
-
-
-
-

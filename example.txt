@@ -20,4 +20,5 @@ print(Marketing.all_rs, Marketing.all_points)
 
 
 '''   R E S U L T S   '''
-{'549964': 'super', '326598': 'super', '509704': 'janobmoylov'} {'super': 2, 'janobmoylov': 1, 'ahad79': 0, 'jotaj': 0}
+{'f9f7a8c7-6822-11ed-a2d2-e8d0fc60dad8': 'super', 'f9f7cfd2-6822-11ed-ae0f-e8d0fc60dad8': 'super', 'f9f7cfd3-6822-11ed-b0e4-e8d0fc60dad8': 'janobmoylov'} 
+{'super': 2, 'janobmoylov': 1, 'ahad79': 0, 'jotaj': 0}

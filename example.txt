@@ -1,0 +1,23 @@
+'''   T E S T S   '''
+
+od1 = Marketing('abduvali', 'qodirov', 'super')
+
+ref1 = od1.referral()
+ref2 = od1.referral()
+
+od2 = Marketing('botir', 'zokirov', 'janobmoylov')
+od2.qowil(ref1)
+
+od3 = Marketing('ahad', 'qayum', 'ahad79')
+od3.qowil(ref1)
+
+ref1_2 = od2.referral()
+
+od4 = Marketing('jahongir', 'otajonov', 'jotaj')
+od4.qowil(ref1_2)
+
+print(Marketing.all_rs, Marketing.all_points)
+
+
+'''   R E S U L T S   '''
+{'549964': 'super', '326598': 'super', '509704': 'janobmoylov'} {'super': 2, 'janobmoylov': 1, 'ahad79': 0, 'jotaj': 0}
